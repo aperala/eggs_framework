@@ -1,0 +1,30 @@
+@import 'eggs-framework';
+
+.dd-button {
+  @include rounded-button(15px);
+  width: 100px;
+}
+
+.drop-down-element {
+  width: 80px;
+  padding-top: 10px;
+}
+
+#example-rounded {
+  @include rounded-button(15px);
+  width: 70px;
+}
+
+#example-centered-wrapper {
+  width: 70px;
+  height: 70px;
+  border: thin gray solid;
+}
+
+#example-centered {
+  @include vertically-centered-element;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background: #666666;
+}
