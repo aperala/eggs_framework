@@ -73,7 +73,7 @@ form.default-form {
     a {
       padding: .3em;
       text-decoration: none;
-      color: white;
+      color: #fff;
 
       &:hover {
         @include border-radius(5px);
@@ -85,17 +85,19 @@ form.default-form {
 }
 
 // adjust navbar font size for medium-sized screens
-@media all and (max-width:800px){
+@media all and (min-width: 568px){
   .fixed-top-nav ul {
-    font-size: 20px;
+    font-size: 22px;
+  }
+  .fixed-top-nav select, .fixed-top-nav button {
+    display: none;
   }
 }
 
 // adjust navbar font size for small screens
-@media all and (max-width:650px) {
+@media all (min-width: 320px) and (max-width:568px) {
   .fixed-top-nav nav ul {
-    margin-right: .5em;
-    font-size: 16px;
+    display: none;
   }
 }
 
@@ -126,4 +128,17 @@ form.default-form {
 .sidebar-li {
   padding-left: 2em;
   line-height: 1.3em;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 25%;
+  height: 32px;
+  margin: .5em  0 .5em .5em;
+  padding-left: .5em;
+  float: left;
+  @include navbar-default-background($default-main-color);
+  color: #fff;
 }
