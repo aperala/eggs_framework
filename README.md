@@ -4,15 +4,11 @@
 
 Add this line to your application's Gemfile:
 
-gem 'eggs_framework'
+gem 'eggs_framework', :git => 'https://github.com/aperala/eggs_framework.git'
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install eggs_framework
+  $ bundle
 
 ## Usage
 
